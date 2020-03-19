@@ -1,0 +1,66 @@
+﻿C#企业级开发技术练习3答题卡
+
+班级；19信管1班
+姓名：张舒倩    
+学号：20190307137     
+
+注：请将答案放置在序号下方。*/
+
+（一）delegate double CalcD(float a, float b, float c);
+class Program 
+{
+static double? CalcSum(int? x,int? y)
+       {    return x + y;    }
+static double? CalcMul(int? x, int? y)
+        {return x - y;  }
+statie void Main(string[]args)
+{
+  CalcD cd = CalcSum;
+  ca+ = CalcMul;
+  Console.WriteLine(cd(5.1f, 2.0f ,0.1f));
+  ca-=CalcMu ;
+  Console.WriteLine(cd(5.1f, 2.0f ,0.1f));
+
+
+
+（二）
+
+
+using System.Linq;
+Class program
+{
+  
+
+static void CalcE(decimal[] a)
+ 
+  { Console.WriteLine($"总和：{a.ce()}");}
+  
+ static void CalcE(double[] a)
+{Console.WriteLine($"平均值：{a.ce()}"); }
+statie void Main(string[]args)
+{
+ Action<double[]> ce = CalcE;
+ ce += CalcE;
+ ce(new[] { 1.2M, 8.9M, 2.1M, 9.9M});
+
+ 
+
+
+（三）static void CalcJoin(string[] x)
+ { 
+    Console.WriteLine(string.Join("，",x)) ; 
+ }
+static void CalConcat(string[] x)
+{
+  Console.WriteLine(string.concat（x));
+ }
+statie void Main(string[]args)
+{
+
+ Action<double[]>ac=CalcJoin ;
+ ac +=CalcJoin;
+ac(new[] {  "sql", "cs" });
+{
+ }
+
+ }
